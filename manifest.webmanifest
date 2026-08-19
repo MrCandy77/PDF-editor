@@ -1,0 +1,26 @@
+{
+  "name": "CT PDF's",
+  "short_name": "CT PDF's",
+  "description": "Free, private, in-browser PDF viewer and editor — view, annotate, sign, and merge PDFs.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1c1f24",
+  "theme_color": "#20242b",
+  "orientation": "any",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "file_handlers": [
+    {
+      "action": "./index.html",
+      "accept": { "application/pdf": [".pdf"] },
+      "icons": [
+        { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }
+      ],
+      "launch_type": "single-client"
+    }
+  ]
+}
